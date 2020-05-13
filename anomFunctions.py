@@ -146,14 +146,14 @@ def clim_repeat(clim_mean, t):
 #    
 #    return baseline_mean
 
-def o2_filter(field, num_years):
+def o2_filter(field, window):
     
     '''
     
     Annual running mean for each cell.
     
     'field' = 4D o2 field
-    'num_years' = number of years in analysis period
+    'window' = window size [days] for convolution; 365 days in this case
     
     '''
     
