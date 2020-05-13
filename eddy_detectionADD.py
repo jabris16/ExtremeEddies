@@ -42,7 +42,7 @@ time_eddies_c = []
 # loop over each day
 print('eddy detection started')
 print("number of time steps to loop over: ", T)
-for tt in range(5):
+for tt in range(T):
     print("timestep: ",tt+1,". out of: ", T)
     # load SSH data
     eta, eta_miss = eddy.load_eta(tt)
