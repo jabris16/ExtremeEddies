@@ -20,7 +20,7 @@ With a focus on the biogeochemical consequences of nonlinear eddies.
 | eddy_functionsADD.py | Functions to be used throughout detection, tracking process. Including original Eric Oliver eddyTracking functions but with additional novel functions added by Jamie Atkins. |
 | eddy_detectionADD.py | Detection procedure for eddy features. Including original Eric Oliver eddyTracking code but with additional novel ('part 2') code written by Jamie Atkins. |
 | eddy_trackingADD.py | Tracking procedure for eddies, using detected features form eddy_detectionADD.py. Including original Eric Oliver eddyTracking code but with additional novel ('part 2') code written by Jamie Atkins. |
-| anomFunctions.py | Supporting functions for calculating SST/SSS anomalies in detection/tracking procedure. |
+| anomFunctions.py | Supporting functions for calculating o2/SST/SSS anomalies in detection/tracking procedure. |
 
 ## How to use
 
