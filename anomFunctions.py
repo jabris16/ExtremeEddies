@@ -58,45 +58,6 @@ def clim_calcs(field, num_years):
 
     return clim_mean
 
-#def clim_calcs_o2(field, num_years):
-#    
-#    '''
-#    
-#    Function to calculate mean value of oxygen ('field') [involving a depth component, unlike sss and sst] for each grid cell across depth range and across each day of the year
-#    
-#    '''
-#
-#    days_in_year = 365
-#    t = num_years * days_in_year
-#    array_shape = np.array(([days_in_year, len(field[0,:,0,0]), len(field[0,0,:,0]), len(field[0,0,0,:])]))
-#    clim_mean = np.zeros(array_shape)
-#    t_len = np.array(range(t))
-#    t_store = np.zeros((days_in_year, int(t / days_in_year)), dtype = object)
-#    
-#    # subset timesteps for upcoming calculations
-#    for i in range(days_in_year):
-#        for j in range(num_years):
-#            if i == 0:
-#                t_store[0][j] = t_len[j * days_in_year]
-#            else:
-#                t_store[i][:] = t_store[0] + int(i)
-#                
-#    print('starting clim_calcs_o2():')
-#    
-#    # calculate mean values 
-#    for d in range(len(field[0,:,0,0])):
-#        print(str(d) + ' of ' + str(len(field[0,:,0,0])-1))
-#        for x in range(len(field[0,0,:,0])):
-#            for y in range(len(field[0,0,0,:])):
-#                for i in range(days_in_year):
-#                    var_int = []
-#                    for j in range(num_years):
-#                        var_int.append(field[t_store[i][j],d,x,y])
-#                    var_array = np.array(var_int)
-#                    var_mean = np.nanmean(var_array)
-#                    clim_mean[i,d,x,y] = var_mean
-#
-#    return clim_mean
 
 def clim_repeat(clim_mean, t):
     
@@ -125,26 +86,6 @@ def clim_repeat(clim_mean, t):
     
     return baseline_mean
 
-#def clim_repeat_o2(clim_mean, t):
-#    
-#    '''
-#    Same as above but for o2 which has a depth component, unlike sss and sst
-#    '''
-#    
-#    days_in_year = 365
-#    t_multi = int(t / days_in_year) + 1 # how many years to repeat for (+ 1 so that remainder can be added on to account for incomplete years)
-#    t_intermed = int(t / days_in_year) * days_in_year # floored nearest complete year, number of timesteps
-#    t_rem = t - t_intermed # number of remaining days
-#    
-#    lat_indexsum = len(clim_mean[0,0,:,0]) # number of latitude indices
-#    lon_indexsum = len(clim_mean[0,0,0,:]) # number of longitude indices
-#    depth_indexsum = len(clim_mean[0,:,0,0]) # number of depth indices
-#    baseline_mean_int = [clim_mean,] * (t_multi -1) 
-#    baseline_mean_add = clim_mean[0:t_rem,:,:,:]
-#    baseline_mean_int = np.reshape(baseline_mean_int, ((t_multi - 1) * days_in_year, depth_indexsum, lat_indexsum, lon_indexsum))
-#    baseline_mean = np.concatenate((baseline_mean_int, baseline_mean_add))
-#    
-#    return baseline_mean
 
 def o2_filter(field, window):
     
