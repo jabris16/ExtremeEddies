@@ -2,7 +2,7 @@
 
     A set of functions to accompany the eddy tracking software.
 
-    Predominantly written by Eric Oliver from his eddy_functions.py script, but also including some additions by Jamie Atkins.
+    Predominantly written by Eric Oliver from his eddy_functions.py script under the terms of the GNU General Public License, but also including some additions by Jamie Atkins.
 
 
 '''
