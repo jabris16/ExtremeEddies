@@ -2,7 +2,7 @@
 
   Software for the detection of eddies in model output following Chelton et al., Progress in Oceanography, 2011.
 
-  Adapted from and using baseline code from Eric Oliver eddyTracking.
+  Adapted from and using baseline code from Eric Oliver eddyTracking under the terms of the GNU General Public License.
 
   Including additional detection designed by Jamie Atkins involving additional metrics for subsequent modified tracking methods to include a new type of eddy (i.e. anticyclonic/cyclonic/ACME).
 
