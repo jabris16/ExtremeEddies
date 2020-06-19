@@ -10,7 +10,7 @@ With a focus on the biogeochemical consequences of nonlinear eddies.
 
 **Baseline structure for the tracking is from Eric Oliver's implementation of the Chelton et al. (2011) method - please see his original code at https://github.com/ecjoliver/eddyTracking and the methodology in Chelton et al. Progress in Oceanography, 2011. Additional code is written by Jamie Atkins to create a modified tracking procedure with an additional eddy type and additional eddy dynamics metrics for future analysis.**
 
-**The author makes no claim of Eric Oliver's work to be their own, and instead intends for it to be a useful set of complementary functions for novel dynamics/climatological/biogeochemical eddy analysis.**
+**The author makes no claim of Eric Oliver's work to be their own, and instead intends for it to be a useful set of complementary functions for novel dynamics/climatological/biogeochemical eddy analysis under the terms of the GNU General Public License.**
 
 ## Contents
 
