@@ -1,3 +1,12 @@
+
+''' 
+
+Parameters to be used in subsequent eddy detection and tracking procedures.
+
+Based on Eric Oliver params.py under the terms of the GNU General Public License. 
+
+'''
+
 #****************************************************************
 # load required modules
 import numpy as np
@@ -10,17 +19,17 @@ res_intend = 0.25 # intended spatial resolution for model output, necessary if d
 # PARAMETERS [ adjust as necessary ] 
 
 # data/plot output directories [in this case these are in the freeglorys/physical data directory]
-data_dir = '/home/bridge/ja16048/mscr/subsurfacedata_tracking/etna/detection_output/' # where to store detection/tracking output
-plot_dir = '/home/bridge/ja16048/mscr/subsurfacedata_tracking/etna/detection_output/' # where to store plot output
+data_dir = './' # where to store detection/tracking output
+plot_dir = './' # where to store plot output
 
 # physical data related pathwas/names
-pathroot = '/home/bridge/ja16048/mscr/subsurfacedata_tracking/etna/data_load/freeglorys_data-load/' # directory containing SSH data to be loaded in for tracking
-filename = 'freeglorys_etna_1992-2018.nc' # name of netcdf file for analysis [ containing SSH, SST, MLD, Lat, Lon data ]; if these come in separate files the loading of data in part 2) of eddy_detection.py will require adjusting 
-filenameSAL = 'freeglorys_etna_SSS_1992-2018.nc' # name of netcdf file containing salinity [SSS] data
+pathroot = './' # directory containing SSH data to be loaded in for tracking
+filename = './' # name of netcdf file for analysis [ containing SSH, SST, MLD, Lat, Lon data ]; if these come in separate files the loading of data in part 2) of eddy_detection.py will require adjusting 
+filenameSAL = './' # name of netcdf file containing salinity [SSS] data
 
 # biogeochem data related pathways/names
-pathroot_o2 = '/home/bridge/ja16048/mscr/subsurfacedata_tracking/etna/data_load/freebiorys_data-load/'
-filename_o2 = 'freebiorys_etna_1992-2018.nc'
+pathroot_o2 = './'
+filename_o2 = './'
 
 num_years = 27 # number of years of data in the analysis period
 
