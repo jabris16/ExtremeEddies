@@ -1,4 +1,7 @@
 ''' 
+***
+Update to be added soon!
+***
 
 Functions for calculating seasonal means of variables (SST and SSS), in order to later calculate SST/SSS anomaly
 
