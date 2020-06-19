@@ -2,7 +2,7 @@
 
 Software for the tracking of eddies in model output following Chelton et al., Progress in Oceanography, 2011.
 
-Adapted from and using baseline code from Eric Oliver eddyTracking.
+Adapted from and using baseline code from Eric Oliver eddyTracking under the terms of the GNU General Public License.
 
 Including additional detection designed by Jamie Atkins involving additional metrics of eddy dynamics (i.e. rotational and translational velocity and nonlinearity)
 
