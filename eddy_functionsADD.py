@@ -61,7 +61,7 @@ def load_eta(tt):
     Loads sea surface height field 
     '''
     
-    pathroot = '/home/bridge/ja16048/mscr/subsurfacedata_tracking/etna/data_load/freeglorys_timesplit/'
+    pathroot = './'
 
     z = pathroot + "day" + str(tt) + ".nc"
     fileobj = Dataset(z)
